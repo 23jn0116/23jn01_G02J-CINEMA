@@ -12,7 +12,7 @@
 <head>
     <meta charset="utf-8">
     <title>J-CINNEMA</title>
-    <link href="../css/style.css" rel="stylesheet"> <!-- 外部CSSファイルのリンク -->
+    <link href="./css/style.css" rel="stylesheet"> <!-- 外部CSSファイルのリンク -->
 </head>
 <body>
     <?php include "header.php"; ?>
