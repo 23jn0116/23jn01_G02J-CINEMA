@@ -1,5 +1,5 @@
 <?php
-require './helpers/MovieDAO.php';
+require 'helpers/MovieDAO.php';
 
 // セッション開始
 if (session_status() === PHP_SESSION_NONE) {
