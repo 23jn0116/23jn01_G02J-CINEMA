@@ -1,0 +1,79 @@
+/* 全体のスタイル設定 */
+body {
+    background-color: #000; /* 背景色を黒に設定 */
+    color: #fff; /* 文字色を白に設定 */
+    font-family: Arial, sans-serif; /* フォントをArialに設定 */
+}
+
+/* 予約ページのスタイル設定 */
+.yoyaku {
+    font-family: 'Arial', sans-serif; /* フォントをArialに設定 */
+    background-color: #eebaba; /* 映画館のような暗い背景色（薄いピンク） */
+    color: #f2f2f2; /* 明るい文字色でコントラストを強調 */
+    margin: 0; /* 外側の余白をゼロに設定 */
+    padding: 0; /* 内側の余白をゼロに設定 */
+    display: flex; /* フレックスボックスで中央配置 */
+    justify-content: center; /* 横方向で中央配置 */
+    align-items: center; /* 縦方向で中央配置 */
+    height: 100vh; /* ビューポートの高さ全体を使用 */
+}
+
+/* コンテナのスタイル設定 */
+.container {
+    text-align: center; /* テキストを中央揃え */
+    background-color: #222; /* 背景色を暗いグレーに設定 */
+    padding: 30px; /* 内側の余白を30pxに設定 */
+    border: 5px solid #ffcc00; /* 映画館風の金色の枠 */
+    border-radius: 10px; /* 角を丸くして柔らかい印象を与える */
+}
+
+/* 見出し (h1) のスタイル設定 */
+h1 {
+    font-size: 2.5em; /* 見出しを大きくする */
+    color: #ffcc00; /* 映画館の照明をイメージした金色 */
+    margin-bottom: 20px; /* 下の余白を20pxに設定 */
+}
+
+/* 段落 (p) の基本スタイル設定 */
+p {
+    font-size: 1.2em; /* フォントサイズを少し大きくする */
+    margin: 10px 0; /* 上下に10pxの余白を設定 */
+}
+
+/* 予約詳細に関する段落のスタイル設定 */
+.reservation-details p {
+    margin: 5px 0; /* 予約詳細項目の間隔を小さく設定 */
+    font-size: 1.1em; /* 文字サイズを少し小さく設定 */
+}
+
+/* ホームボタンのスタイル設定 */
+.home-button {
+    background-color: #ffcc00; /* ボタンの背景色を映画館の照明をイメージした金色に設定 */
+    color: #101010; /* ボタンのテキストカラーを黒に設定 */
+    border: none; /* 枠線をなくす */
+    padding: 10px 20px; /* ボタンの内側に余白を設定 */
+    font-size: 1.2em; /* フォントサイズを少し大きく設定 */
+    cursor: pointer; /* カーソルをポインターに変更してクリックできることを示す */
+    border-radius: 5px; /* 角を丸くして柔らかい印象にする */
+    transition: background-color 0.3s, transform 0.3s; /* ホバー時に背景色とサイズが変わるアニメーション */
+}
+
+/* ホームボタンのホバー時のスタイル設定 */
+.home-button:hover {
+    background-color: #ffb300; /* ホバー時の背景色を少し暗くする */
+    transform: scale(1.05); /* ホバー時にボタンが少し拡大する */
+}
+
+/* メモのスタイル設定 */
+.note {
+    top: 10px; /* 上に10pxの余白を追加 */
+    background-color: #333; /* 背景色を暗いグレーに設定 */
+    padding: 15px; /* 内側の余白を15pxに設定 */
+    border-radius: 10px; /* 角を丸くして柔らかい印象を与える */
+    margin: 10px 10px; /* 外側に10pxの余白を設定 */
+}
+
+/* メモ内のテキストのスタイル設定 */
+.note p {
+    color: #f9c40f; /* メモ内のテキストを黄色に設定 */
+}

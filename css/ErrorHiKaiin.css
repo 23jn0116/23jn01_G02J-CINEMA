@@ -1,0 +1,69 @@
+/* bodyタグに適用されるスタイル */
+body {
+    font-family: 'Roboto', sans-serif; /* フォントをRobotoに設定 */
+    background-color: #000; /* 背景色を黒に設定 */
+    color: #fff; /* 文字色を白に設定 */
+}
+
+/* .error-containerクラス: エラーメッセージを中央に配置するためのスタイル */
+.error-container {
+    display: flex; /* フレックスボックスを使用 */
+    justify-content: center; /* 水平方向に中央揃え */
+    align-items: center; /* 垂直方向に中央揃え */
+    height: 100vh; /* ビューポートの高さに合わせる */
+    text-align: center; /* テキストを中央揃え */
+}
+
+/* .error-contentクラス: エラーメッセージのボックスのスタイル */
+.error-content {
+    padding: 40px; /* 内側に40pxの余白を追加 */
+    border-radius: 10px; /* 角を丸くする */
+    background-color: #ffc107; /* 背景色を黄色に設定 */
+    color: #000; /* 文字色を黒に設定 */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* ボックスに影をつける */
+    width: 100%; /* 幅を親要素に合わせる */
+    max-width: 1000px; /* 最大幅を1000pxに設定 */
+    font-family: 'Poppins', sans-serif; /* フォントをPoppinsに設定 */
+}
+
+/* h1タグ: 見出しのスタイル */
+h1 {
+    font-size: 2rem; /* フォントサイズを2remに設定 */
+    font-weight: 600; /* 太字に設定 */
+    margin-bottom: 20px; /* 見出しの下に20pxの余白を追加 */
+}
+
+/* .btn-customクラス: カスタムボタンのスタイル */
+.btn-custom {
+    color: #fff; /* 文字色を白に設定 */
+    background-color: #888787; /* 背景色を灰色に設定 */
+    margin: 10px; /* ボタン間の余白を確保 */
+    padding: 14px 30px; /* ボタンの縦横のパディングを設定 */
+    font-size: 1.2rem; /* フォントサイズを1.2remに設定 */
+    font-weight: bold; /* 太字に設定 */
+    border-radius: 10px; /* 角を丸くする */
+    text-transform: uppercase; /* 文字を大文字に変換 */
+    transition: all 0.3s ease; /* アニメーションの遷移をスムーズに */
+}
+
+/* .error-buttonクラス: ボタンを横並びに配置 */
+.error-button {
+    display: flex; /* フレックスボックスを使用 */
+    justify-content: center; /* ボタンを中央揃え */
+    gap: 15px; /* ボタン間に15pxの隙間を追加 */
+}
+
+/* .btn-blackクラス: 黒いボタンのスタイル */
+.btn-black {
+    background-color: #333; /* 背景色をダークグレーに設定 */
+    border-color: #333; /* ボーダー色をダークグレーに設定 */
+    color: #fff; /* 文字色を白に設定 */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); /* ボタンに影を追加 */
+}
+
+/* .btn-black:hoverクラス: 黒いボタンにホバー時の効果を追加 */
+.btn-black:hover {
+    background-color: #333; /* 背景色をそのままに */
+    border-color: #00000069; /* ボーダー色を少し暗く設定 */
+    transform: scale(1.5); /* ホバー時にボタンを拡大 */
+}

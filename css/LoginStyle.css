@@ -1,0 +1,116 @@
+/* bodyタグ: ページ全体の基本スタイル */
+body {
+    height: 100%; /* ページ全体の高さを100%に設定 */
+    margin: 0; /* マージンをリセット */
+    font-family: 'Arial', sans-serif; /* フォントをArialに設定 */
+    background-color: #101010; /* 映画館のような暗い背景 */
+}
+
+/* h1とpタグ: 見出しと段落の基本スタイル */
+h1, p {
+    text-align: center; /* テキストを中央揃え */
+    margin: 0; /* マージンをリセット */
+    font-size: 2.5em; /* フォントサイズを2.5emに設定 */
+    color: #ffcc00; /* 映画館の照明のような色 */
+}
+
+/* .center-wrapperクラス: 中央揃えのためのラッパー */
+.center-wrapper {
+    display: flex; /* フレックスボックスでレイアウト */
+    justify-content: center; /* 水平方向に中央揃え */
+    align-items: center; /* 垂直方向に中央揃え */
+    height: 100%; /* 高さを100%に設定 */
+}
+
+/* .centerクラス: 中身を中央に配置し、スタイルを設定 */
+.center {
+    text-align: center; /* テキストを中央揃え */
+    border: 1px solid #ccc; /* 薄いグレーの枠線を追加 */
+    padding: 20px; /* パディングを20pxに設定 */
+    background-color: #f9f9f9; /* 明るい背景色 */
+    overflow-x: auto; /* 横スクロールを追加（必要な場合） */
+    max-width: 100%; /* 最大幅を画面幅に制限 */
+}
+
+/* .btnクラス: ボタンの基本スタイル */
+.btn {
+    background-color: rgba(255, 255, 255, 0.8); /* 半透明の白背景 */
+    border: 2px solid black; /* 黒い枠線 */
+    cursor: pointer; /* ポインターを表示 */
+    padding: 10px; /* パディングを10pxに設定 */
+    font-size: 1.2em; /* フォントサイズを1.2emに設定 */
+    color: black; /* テキストカラーを黒に設定 */
+    border-radius: 5px; /* 角を丸く設定 */
+    transition: background-color 0.3s; /* 背景色の遷移効果 */
+}
+
+/* .btnクラス: ボタンにホバーしたときのスタイル */
+.btn:hover {
+    background-color: rgba(0, 0, 0, 0.534); /* ホバー時に背景を暗く */
+}
+
+/* .btn-containerクラス: ボタンの配置 */
+.btn-container {
+    text-align: center; /* テキストを中央揃え */
+    padding: 10px 0; /* 上下に10pxの余白 */
+}
+
+/* tableタグ: テーブル全体のスタイル */
+table {
+    width: 100%; /* テーブルの幅を画面幅に合わせる */
+    border-collapse: collapse; /* セル間の境界線を消す */
+    font-size: 1em; /* フォントサイズを適切に設定 */
+}
+
+/* tdタグ: テーブルセルのスタイル */
+td {
+    padding: 10px; /* セル内のパディングを調整 */
+    font-size: 1em; /* セル内テキストのフォントサイズを調整 */
+    vertical-align: top; /* 上寄せに配置 */
+    border-bottom: 1px solid #ddd; /* 下に薄いグレーの境界線を追加 */
+}
+
+/* 入力フィールド（テキスト、数字、メール、パスワード）のスタイル */
+input[type="text"],
+input[type="number"],
+input[type="email"],
+input[type="password"] {
+    width: 100%; /* 入力フィールドの幅をテーブルの幅に合わせる */
+    padding: 10px; /* パディングを増やして入力領域を広げる */
+    border: 1px solid #ddd; /* 枠線を薄いグレーに設定 */
+    border-radius: 4px; /* 角を丸く設定 */
+    font-size: 1em; /* フォントサイズを適切に設定 */
+}
+
+/* input[type="tel"]: 電話番号入力フィールドのスタイル */
+input[type="tel"] {
+    width: 20%; /* 入力フィールドの幅を20%に設定 */
+    padding: 10px; /* パディングを増やして入力領域を広げる */
+    border: 1px solid #ddd; /* 枠線を薄いグレーに設定 */
+    border-radius: 4px; /* 角を丸く設定 */
+    font-size: 1.0em; /* フォントサイズを大きく設定 */
+}
+
+/* submitボタンのスタイル */
+input[type="submit"] {
+    background-color: #4CAF50; /* 緑色の背景 */
+    color: white; /* 白いテキスト */
+    padding: 10px 20px; /* パディングを設定 */
+    border: none; /* ボーダーなし */
+    border-radius: 4px; /* 角を丸く設定 */
+    cursor: pointer; /* ポインターを表示 */
+    font-size: 1.5em; /* フォントサイズを調整 */
+    transition: background-color 0.3s; /* 背景色の遷移効果 */
+    width: 100%; /* ボタンの幅をテーブル幅に合わせる */
+}
+
+/* submitボタン: ホバー時のスタイル */
+input[type="submit"]:hover {
+    background-color: #45a049; /* ホバー時に背景色を少し暗く */
+}
+
+/* エラーメッセージのスタイル */
+span {
+    color: red; /* エラーメッセージを赤色に設定 */
+    font-size: 1em; /* フォントサイズを適切に調整 */
+}

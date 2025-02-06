@@ -1,0 +1,61 @@
+/* bodyタグ: ページ全体の基本スタイル */
+body {
+    color: white; /* 文字の色を白に設定 */
+    background-color: black; /* 背景色を黒に設定 */
+    font-family: Arial, sans-serif; /* フォントをArialに設定 */
+    padding: 20px; /* 内側の余白を追加 */
+}
+
+/* h1タグ: 見出しのスタイル */
+h1 {
+    margin: 0; /* マージンをリセット */
+    font-size: 2.5em; /* フォントサイズを2.5倍に設定 */
+    color: #ffcc00; /* 明るいアクセントカラーを設定 */
+}
+
+/* #glayLayer: ページ全体を覆う暗いオーバーレイヤー */
+#glayLayer {
+    display: none; /* 初期状態は非表示 */
+    position: fixed; /* 固定位置 */
+    top: 0; /* 上から0px */
+    left: 0; /* 左から0px */
+    width: 100%; /* 幅を画面全体に設定 */
+    height: 100%; /* 高さを画面全体に設定 */
+    background-color: rgba(0, 0, 0, 0.7); /* 半透明の黒い背景 */
+    z-index: 1000; /* 他の要素の上に表示 */
+}
+
+/* #overLayer: モーダルウィンドウのスタイル */
+#overLayer {
+    display: none; /* 初期状態は非表示 */
+    position: absolute; /* 絶対位置指定 */
+    top: 50%; /* 画面の中央に配置 */
+    left: 50%; /* 画面の中央に配置 */
+    transform: translate(-50%, -50%); /* 中央揃え */
+    background-color: #222; /* ダークグレーの背景色 */
+    padding: 20px; /* 内側の余白 */
+    border-radius: 8px; /* 角を丸く設定 */
+    color: white; /* テキストカラーを白に設定 */
+    z-index: 1001; /* モーダルが他の要素の上に表示 */
+}
+
+/* .next-button, .back-button: ナビゲーションボタンのスタイル */
+.next-button,
+.back-button {
+    background-color: #ffcc00; /* ボタンの背景色を明るい黄色に設定 */
+    color: #101010; /* ボタンのテキスト色を黒に設定 */
+    border: none; /* 枠線なし */
+    border-radius: 5px; /* 角を丸く設定 */
+    padding: 10px 20px; /* ボタン内の余白を設定 */
+    margin: 0 10px; /* ボタン間の余白を設定 */
+    cursor: pointer; /* ボタンにカーソルを表示 */
+    font-size: 15px; /* テキストサイズを15pxに設定 */
+    transition: background-color 0.3s, transform 0.3s; /* 背景色と変形の遷移効果 */
+}
+
+/* .next-button:hover, .back-button:hover: ボタンにホバーしたときのスタイル */
+.next-button:hover,
+.back-button:hover {
+    background-color: #ffb300; /* ホバー時に背景色を少し濃く */
+    transform: scale(1.05); /* ホバー時にボタンを少し拡大 */
+}

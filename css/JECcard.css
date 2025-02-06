@@ -1,0 +1,88 @@
+/* bodyタグ: ページ全体のスタイル */
+body {
+    font-family: 'Arial', sans-serif; /* フォントをArialに設定 */
+    margin: 0; /* ページの余白を0に設定 */
+    padding: 0; /* ページのパディングを0に設定 */
+    background-color: #101010; /* 映画館のような暗い背景 */
+    color: #f2f2f2; /* テキストカラーを明るく */
+}
+
+/* h1タグ: メイン見出しのスタイル */
+h1 {
+    text-align: center; /* 見出しを中央揃え */
+    margin: 20px 0; /* 上下に20pxの余白を追加 */
+    font-size: 2.5em; /* フォントサイズを大きく */
+    color: #ffcc00; /* 見出しの色を黄色に設定 */
+}
+
+/* h2タグ: サブ見出しのスタイル */
+h2 {
+    text-align: center; /* 見出しを中央揃え */
+    margin: 20px 0; /* 上下に20pxの余白を追加 */
+    font-size: 2.5em; /* フォントサイズを大きく */
+    color: red; /* 見出しの色を赤に設定 */
+}
+
+/* pタグ: パラグラフのスタイル */
+p {
+    text-align: center; /* テキストを中央揃え */
+    margin: 20px 0; /* 上下に20pxの余白を追加 */
+    font-size: 2.5em; /* フォントサイズを大きく */
+    color: #ffcc00; /* 映画館の照明のような黄色い色 */
+}
+
+/* .button-containerクラス: ボタンを格納するコンテナ */
+.button-container {
+    display: flex; /* 横並びに表示 */
+    flex-wrap: wrap; /* 複数行に対応 */
+    justify-content: center; /* ボタンを中央揃え */
+    margin: 20px 0; /* 上下に20pxの余白を追加 */
+}
+
+/* buttonタグ: ボタンの基本スタイル */
+button {
+    background-color: #ffcc00; /* ボタンの背景色を黄色に設定 */
+    color: #101010; /* テキストの色を暗い色に設定 */
+    border: none; /* ボーダーを非表示 */
+    width: 150px; /* ボタンの幅を150pxに設定 */
+    border-radius: 5px; /* 角を丸く設定 */
+    padding: 10px 20px; /* ボタン内の余白を設定 */
+    cursor: pointer; /* ホバー時にカーソルが手のひらに変わる */
+    font-size: 1em; /* フォントサイズを標準に設定 */
+}
+
+/* buttonタグ: ボタンにホバーした際の効果 */
+button:hover {
+    background-color: #ffb300; /* ホバー時の背景色を少し暗く */
+}
+
+/* .submitクラス: 送信ボタンのスタイル */
+.submit {
+    background-color: #ffcc00; /* 送信ボタンの背景色を黄色に設定 */
+    color: black; /* 文字色を黒に設定 */
+    border: none; /* ボーダーを非表示 */
+    width: 150px; /* ボタンの幅を150pxに設定 */
+    border-radius: 5px; /* 角を丸く設定 */
+    padding: 10px 20px; /* ボタン内の余白を設定 */
+    cursor: pointer; /* ホバー時にカーソルが手のひらに変わる */
+    font-size: 1em; /* フォントサイズを標準に設定 */
+}
+
+/* .submit-containerクラス: 送信ボタンを格納するコンテナ */
+.submit-container {
+    justify-content: center; /* ボタンを中央揃え */
+    margin: 20px 0; /* 上下に20pxの余白を追加 */
+}
+
+/* .submitクラス: 送信ボタンにホバーした際の効果 */
+.submit:hover {
+    background-color: #ffb300; /* ホバー時の背景色を少し暗く */
+}
+
+/* .reserve-buttonクラス: 予約ボタンを格納するコンテナ */
+.reserve-button {
+    display: flex; /* 横並びに表示 */
+    flex-wrap: wrap; /* 複数行に対応 */
+    justify-content: center; /* ボタンを中央揃え */
+    margin: 20px 0; /* 上下に20pxの余白を追加 */
+}

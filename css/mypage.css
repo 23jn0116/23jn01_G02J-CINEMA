@@ -1,0 +1,67 @@
+/* bodyタグ: ページ全体の基本スタイル */
+body {
+    font-family: 'Arial', sans-serif; /* フォントをArialに設定 */
+    background-color: #101010; /* 映画館のような暗い背景 */
+    color: #f2f2f2; /* テキストカラーを明るく */
+    margin: 0; /* 余白をゼロに設定 */
+    padding: 0; /* 余白をゼロに設定 */
+}
+
+/* .mypage-contentクラス: マイページコンテンツのスタイル */
+.mypage-content {
+    text-align: center; /* コンテンツを中央揃え */
+    margin-top: 50px; /* 上部に余白を追加 */
+}
+
+/* .button-containerクラス: ボタンを縦並びにするためのスタイル */
+.button-container {
+    display: flex; /* フレックスボックスを使用 */
+    flex-direction: column; /* ボタンを縦に並べる */
+    align-items: center; /* 水平方向に中央揃え */
+    gap: 20px; /* ボタン間の余白を設定 */
+}
+
+/* .movie-buttonクラス: 映画ボタンのスタイル */
+.movie-button {
+    background-color: #ffcc00; /* 明るい黄色の背景色 */
+    color: #101010; /* ボタンのテキスト色を黒に設定 */
+    border: none; /* ボーダーなし */
+    border-radius: 5px; /* 角を丸く設定 */
+    padding: 10px 20px; /* ボタン内のパディングを設定 */
+    cursor: pointer; /* ホバー時にカーソルをポインタに */
+    font-size: 1.2em; /* フォントサイズを1.2倍に設定 */
+    transition: background-color 0.3s, transform 0.3s; /* 背景色と変形の遷移効果 */
+    width: 400px; /* ボタンの幅を広く設定 */
+}
+
+/* .movie-button:hoverクラス: ホバー時のスタイル */
+.movie-button:hover {
+    background-color: #ffb300; /* ホバー時の背景色を少し濃く */
+    transform: scale(1.05); /* ホバー時にボタンを少し拡大 */
+}
+
+/* .mypage-button-containerクラス: マイページボタンの固定位置 */
+.mypage-button-container {
+    position: fixed; /* 固定位置 */
+    top: 10px; /* 画面上部から10pxの位置 */
+    right: 10px; /* 画面右側から10pxの位置 */
+    z-index: 1000; /* 最前面に表示 */
+}
+
+/* .mypage-buttonクラス: マイページボタンのスタイル */
+.mypage-button {
+    background-color: #ffcc00; /* 明るい黄色の背景色 */
+    color: #101010; /* ボタンのテキスト色を黒に設定 */
+    border: none; /* ボーダーなし */
+    border-radius: 5px; /* 角を丸く設定 */
+    padding: 10px 20px; /* ボタン内のパディングを設定 */
+    cursor: pointer; /* ホバー時にカーソルをポインタに */
+    font-size: 1em; /* フォントサイズを1emに設定 */
+    transition: background-color 0.3s, transform 0.3s; /* 背景色と変形の遷移効果 */
+}
+
+/* .mypage-button:hoverクラス: ホバー時のスタイル */
+.mypage-button:hover {
+    background-color: #ffb300; /* ホバー時の背景色を少し濃く */
+    transform: scale(1.05); /* ホバー時にボタンを少し拡大 */
+}

@@ -1,0 +1,71 @@
+/* 基本のデザイン */
+body {
+    background-color: #000; /* 背景色を黒に設定 */
+    color: #fff; /* テキストカラーを白に設定 */
+    font-family: 'Roboto', sans-serif; /* フォントをRobotoに設定 */
+}
+
+/* headerタグ: ヘッダー部分のデザイン */
+header {
+    background-color: #ffc107; /* 背景色を黄色に設定 */
+    color: #000; /* テキストカラーを黒に設定 */
+    padding: 15px; /* パディングを15pxに設定 */
+    text-align: center; /* テキストを中央揃え */
+    font-size: 1.8rem; /* フォントサイズを1.8remに設定 */
+}
+
+/* .containerクラス: フォームの背景とレイアウト */
+.container {
+    max-width: 600px; /* 最大幅を600pxに設定 */
+    margin-top: 50px; /* 上に50pxの余白を追加 */
+    height: 300px; /* 高さを300pxに設定 */
+    background-color: #343a40; /* ダークグレーの背景色 */
+    padding: 30px; /* パディングを30pxに設定 */
+    border-radius: 10px; /* 角を丸く設定 */
+}
+
+/* formタグ: フォームのレイアウト */
+form {
+    display: flex; /* フレックスボックスでレイアウト */
+    flex-direction: column; /* 縦方向に配置 */
+    justify-content: flex-start; /* 上に寄せる */
+    align-items: center; /* 水平方向に中央揃え */
+    height: 100%; /* フォームの高さを親要素に合わせる */
+    padding-top: 10px; /* 上部にスペースを作る */
+}
+
+/* .checkクラス: チェックボタンのデザイン */
+.check {
+    background-color: #ffc107; /* 背景色を黄色に設定 */
+    border-color: #ffc107; /* ボーダー色を黄色に設定 */
+    color: #000; /* テキスト色を黒に設定 */
+    border-radius: 5px; /* ボタンの角を丸く設定 */
+    cursor: pointer; /* ポインターを表示してクリック可能に */
+    font-size: 20px; /* フォントサイズを20pxに設定 */
+    padding: 5px 100px; /* ボタン内の左右に100pxのパディング */
+    width: auto; /* 幅はコンテンツに合わせる */
+}
+
+/* .checkクラス: ボタンにホバーした時のスタイル */
+.check:hover {
+    background-color: #e0a800; /* 黄色を少し濃くする */
+    border-color: #e0a800; /* ボーダー色を濃い黄色に変更 */
+}
+
+/* .footerクラス: フッター部分のデザイン */
+.footer {
+    text-align: center; /* フッター内のテキストを中央揃え */
+    background-color: #000; /* 背景色を黒に設定 */
+    color: #fff; /* テキストカラーを白に設定 */
+    padding: 20px; /* パディングを20pxに設定 */
+    position: fixed; /* 固定位置に設定 */
+    width: 100%; /* 幅を100%に設定して画面幅いっぱいに */
+    bottom: 0; /* 画面下部に配置 */
+}
+
+/* h1, h3タグ: 見出しのデザイン */
+h1, h3 {
+    font-size: 1.5rem; /* フォントサイズを1.5remに設定 */
+    font-weight: bold; /* 太字に設定 */
+    text-align: center; /* テキストを中央揃え */
+}

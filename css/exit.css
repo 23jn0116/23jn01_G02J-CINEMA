@@ -1,0 +1,110 @@
+/* 基本設定 */
+* {
+    margin: 0; /* 全ての要素のマージンをリセット */
+    padding: 0; /* 全ての要素のパディングをリセット */
+    box-sizing: border-box; /* ボックスサイズをボーダーを含めて計算 */
+}
+
+/* コンテナ */
+body {
+    font-family: Arial, sans-serif; /* フォントをArialに設定 */
+    background-color: #101010; /* 映画館のような暗い背景 */
+    color: #333; /* テキストの色を暗めのグレーに設定 */
+    display: flex; /* フレックスボックスでレイアウト */
+    justify-content: center; /* 水平方向に中央揃え */
+    align-items: center; /* 垂直方向に中央揃え */
+    height: 100vh; /* ビューポート全体を高さに設定 */
+}
+
+.container {
+    background-color: #101010; /* 映画館のような暗い背景 */
+    width: 100%; /* コンテナの幅を100%に設定 */
+    max-width: 500px; /* 最大幅を500pxに設定 */
+    padding: 20px; /* 内側の余白を20pxに設定 */
+    border-radius: 8px; /* 角を丸く設定 */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* 影を付けて立体感を演出 */
+}
+
+header h1 {
+    text-align: center; /* 見出しを中央揃え */
+    margin-bottom: 20px; /* 下部に余白を追加 */
+}
+
+.main-content {
+    margin-top: 20px; /* 上部に余白を追加 */
+}
+
+.warning {
+    background-color: #ffcccb; /* 警告メッセージ用の背景色（薄いピンク） */
+    padding: 10px; /* 内側の余白を10pxに設定 */
+    border: 1px solid #ff6f6f; /* 警告メッセージ用の枠線色 */
+    border-radius: 5px; /* 角を丸く設定 */
+    margin-bottom: 15px; /* 下部に余白を追加 */
+    font-size: 14px; /* フォントサイズを14pxに設定 */
+}
+
+.warning p{
+    color: #101010; /* 警告メッセージ内のテキストを黒に設定 */
+}
+
+textarea {
+    width: 100%; /* テキストエリアの幅を100%に設定 */
+    padding: 10px; /* 内側の余白を10pxに設定 */
+    margin-bottom: 15px; /* 下部に余白を追加 */
+    border: 1px solid #ddd; /* テキストエリアの枠線色 */
+    border-radius: 5px; /* 角を丸く設定 */
+    font-size: 14px; /* フォントサイズを14pxに設定 */
+}
+
+.checkbox-group {
+    margin-bottom: 20px; /* チェックボックスグループの下部に余白を追加 */
+}
+
+.action-buttons {
+    display: flex; /* ボタンをフレックスボックスで配置 */
+    justify-content: space-between; /* ボタンを左右に配置 */
+}
+
+.submit-btn {
+    background-color: #e74c3c; /* 提出ボタンの背景色（赤） */
+    color: white; /* テキスト色を白に設定 */
+    padding: 10px 20px; /* ボタン内のパディング */
+    border: none; /* 枠線なし */
+    border-radius: 5px; /* 角を丸く設定 */
+    cursor: pointer; /* マウスカーソルをポインタに変更 */
+}
+
+.submit-btn:hover {
+    background-color: #c0392b; /* ホバー時にボタン色を少し濃く */
+}
+
+.cancel-btn {
+    background-color: #bdc3c7; /* キャンセルボタンの背景色（灰色） */
+    color: white; /* テキスト色を白に設定 */
+    padding: 10px 20px; /* ボタン内のパディング */
+    border: none; /* 枠線なし */
+    border-radius: 5px; /* 角を丸く設定 */
+    cursor: pointer; /* マウスカーソルをポインタに変更 */
+}
+
+.cancel-btn:hover {
+    background-color: #95a5a6; /* ホバー時にボタン色を少し濃く */
+}
+
+footer {
+    text-align: center; /* フッターのテキストを中央揃え */
+    margin-top: 20px; /* 上部に余白を追加 */
+    font-size: 12px; /* フォントサイズを12pxに設定 */
+}
+
+h2 {
+    font-size: 18px; /* 見出しのフォントサイズを18pxに設定 */
+    margin-bottom: 10px; /* 下部に余白を追加 */
+    color: red; /* 見出しのテキスト色を赤に設定 */
+}
+
+p {
+    font-size: 18px; /* 段落のフォントサイズを18pxに設定 */
+    margin-bottom: 10px; /* 下部に余白を追加 */
+    color: white; /* テキスト色を白に設定 */
+}

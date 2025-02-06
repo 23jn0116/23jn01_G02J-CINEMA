@@ -1,0 +1,203 @@
+/*全体の背景色とレイアウト設定*/
+body {
+    background-color: #101010; /* 背景色を赤に設定 */
+    height: 100vh; /* ビューポートの高さを100%に設定 */
+    margin: 0; /* 余白をなくす */
+    overflow: auto; /* コンテンツがはみ出る場合、スクロールバーを表示 */
+    color: #ffffff; /* テキストの色を白に設定 */
+    display: flex; /* Flexboxレイアウトを使用 */
+    flex-direction: column; /* 子要素を縦に並べる */
+    justify-content: flex-start; /* 上部に寄せて配置 */
+    align-items: center; /* 水平方向に中央寄せ */
+}
+
+/*ヘッダー部分のスタイル設定*/
+header {
+    position: relative; /* 相対配置 */
+    top: 0; /* 上から0pxの位置 */
+    width: 100%; /* 幅100%で全体に広がる */
+    background-color: #ffffff; /* 背景色を白に設定 */
+    color: #ffcc00; /* テキストの色を黄色に設定 */
+    padding: 10px 0; /* 上下に10pxのパディング */
+    text-align: center; /* テキストを中央揃え */
+    z-index: 1000; /* 他の要素より上に表示 */
+}
+p{
+    font-size:15px;
+    margin-top:4px;
+}
+/*コンテナのスタイル設定*/
+.container {
+    background-color: #555050; /* 背景色をグレーに設定 */
+    padding: 20px; /* 20pxのパディングを追加 */
+    border-radius: 10px; /* 角を丸くする */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* 影を付けて浮き上がる効果 */
+    display: flex; /* Flexboxレイアウトを使用 */
+    flex-direction: row; /* 子要素を横並び */
+    justify-content: space-between; /* 左右に間隔を取る */
+    width: 90%; /* 幅を80%に設定 */
+    height: 80%; /* 高さを80%に設定 */
+    margin-top: 10px; /* ヘッダーとの間隔を10px空ける */
+}
+
+/* 左側：座席説明部分のスタイル設定 */
+.left-column {
+    flex: 1; /* 左側のカラムが全体の1/3の割合 */
+    padding: 10px 10px; /* 上下の余白を減らし、左右は20px */
+    background-color: #333;
+    color: white;
+    border-radius: 10px;
+    margin-right: 20px; /* 右カラムとの間隔を調整 */
+    display: flex;
+    flex-direction: column; /* 縦並びに設定 */
+    align-items: flex-start; /* テキストを上揃え */
+    height: 98%; /* 高さを親要素に合わせる */
+}
+
+
+/* 右側：座席選択部分のスタイル設定 */
+.right-column {
+    flex: 5; /* 右側のカラムが全体の2/3の割合 */
+    padding: 20px;
+    text-align: center; /* テキストを中央揃え */
+    overflow-y: auto;
+}
+
+/* 座席の配置部分のみ中央揃え */
+.seats {
+    display: flex;
+    flex-wrap: wrap; /* 座席を折り返す */
+    justify-content: center; /* 座席を中央揃え */
+    align-items: center; /* 座席を垂直方向にも中央揃え */
+    gap: 10px; /* 座席間の間隔を調整 */
+}
+
+
+/*座席選択部分のスタイル設定*/
+.seat-selection {
+    flex: 5; /* 左側の座席選択部分を広く */
+    padding: 20px; /* 20pxのパディングを追加 */
+    text-align: center; /* テキストを中央揃え */
+    overflow-y: auto; /* 座席が多い場合、縦スクロールを追加 */
+}
+
+/*座席説明部分のスタイル設定*/
+.seat-description {
+    flex: 1; /* 右側の座席説明部分を狭く */
+    padding: 20px; /* 20pxのパディングを追加 */
+    background-color: #333; /* 背景色をダークグレーに設定 */
+    color: white; /* テキストの色を白に設定 */
+    border-radius: 10px; /* 角を丸くする */
+    margin-left: 20px; /* 左側に20pxのマージンを追加 */
+    text-align: left; /* テキストを左揃え */
+    height: 100%; /* 高さを親要素に合わせる */
+}
+
+/* 座席のスタイル設定 */
+.seat {
+    width: 40px; /* 幅40px */
+    height: 30px; /* 高さ30px */
+    border: 1px solid #ccc; /* 薄いグレーのボーダーを設定 */
+    display: inline-block; /* インラインブロックで横並びに配置 */
+    margin: 10px; /* 座席間の間隔を10pxに設定 */
+    text-align: center; /* テキストを中央揃え */
+    vertical-align: middle; /* 垂直方向に中央揃え */
+    background-color: white; /* 背景色を白に設定 */
+    font-size: 0.8em; /* フォントサイズを少し小さく設定 */
+    color: black; /* テキストの色を黒に設定 */
+    cursor: pointer; /* クリック可能なカーソルに変更 */
+}
+/*プレミアムシートのスタイル設定*/
+.premium {
+    background-color: #ffd901; /* プレミアムシートの背景色を金色に設定 */
+    color: white; /* テキストの色を白に設定 */
+    font-weight: bold; /* テキストを太字に設定 */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7); /* テキストに影を付ける */
+}
+
+/*予約済み座席のスタイル設定*/
+.occupied {
+    background-color: black; /* 予約済み座席の背景色を黒に設定 */
+    cursor: not-allowed; /* クリック不可能なカーソルに変更 */
+    color: #666; /* テキストの色を灰色に設定 */
+}
+
+/*予約済みプレミアム座席のスタイル設定*/
+.occupied-premium {
+    background-color: black; /* 予約済みプレミアム座席の背景色を黒に設定 */
+    cursor: not-allowed; /* クリック不可能なカーソルに変更 */
+    color: #666; /* テキストの色を灰色に設定 */
+}
+
+.selected {
+    background-color: red; /* 選択された座席の背景色を赤に設定 */
+    color: black; /* テキストの色を黒に設定 */
+}
+/* プレミアム座席が選択されたときのスタイル */
+.premium-selected {
+    background-color: red; /* プレミアム選択時の色 */
+    color: white;
+}
+
+/*ボタンの共通スタイル設定*/
+.reserve-button, .back-button {
+    background-color: #ffcc00; /* ボタンの背景色を黄色に設定 */
+    color: #101010; /* テキストの色を濃い灰色に設定 */
+    border: none; /* ボーダーをなくす */
+    border-radius: 5px; /* 角を丸くする */
+    padding: 10px 20px; /* パディングを上下10px、左右20pxに設定 */
+    margin: 10px; /* ボタン間の間隔を10pxに設定 */
+    cursor: pointer; /* クリック可能なカーソルに変更 */
+    font-size: 15px; /* フォントサイズを15pxに設定 */
+}
+
+/*詳細説明部分のスタイル設定*/
+.seat-description h3 {
+    font-size: 1.2em; /* 見出しのフォントサイズを1.2倍に設定 */
+    margin-bottom: 15px; /* 見出しとリストの間に15pxの余白を追加 */
+    color: #ffcc00; /* 見出しのテキスト色を黄色に設定 */
+}
+
+.seat-description ul {
+    list-style-type: none; /* リストの箇条書き記号を非表示に設定 */
+    padding-left: 0; /* 左側のパディングをゼロに設定 */
+}
+
+.seat-description li {
+    margin-bottom: 10px; /* 各リスト項目の間に10pxの余白を追加 */
+}
+
+/*出入口のスタイル設定*/
+.aisle.entrance {
+    background-color: #0066cc; /* 出入口の背景色を青に設定 */
+    color: white; /* テキストの色を白に設定 */
+    font-weight: bold; /* テキストを太字に設定 */
+    text-align: center; /* テキストを中央揃え */
+    font-size: 1.2em; /* フォントサイズを1.2倍に設定 */
+    padding: 5px 10px; /* パディングを上下5px、左右10pxに設定 */
+    border-radius: 5px; /* 角を丸くする */
+    margin: 10px 0; /* 上下に10pxの余白を追加 */
+}
+
+.aisle.exit {
+    background-color: #ff0000; /* 出口の背景色を赤に設定 */
+    color: white; /* テキストの色を白に設定 */
+    font-weight: bold; /* テキストを太字に設定 */
+    text-align: center; /* テキストを中央揃え */
+    font-size: 1.2em; /* フォントサイズを1.2倍に設定 */
+    padding: 5px 10px; /* パディングを上下5px、左右10pxに設定 */
+    border-radius: 5px; /* 角を丸くする */
+    margin: 10px 0; /* 上下に10pxの余白を追加 */
+}
+
+/*通路のスタイル設定*/
+.aisle {
+    display: inline-block; /* インラインブロックで横並びに配置 */
+    width: 20px; /* 幅を20pxに設定 */
+    height: 30px; /* 高さを30pxに設定 */
+    background-color: black; /* 通路の背景色を黒に設定 */
+    margin: 5px; /* 通路間の間隔を5pxに設定 */
+    text-align: center; /* テキストを中央揃え */
+    font-weight: bold; /* テキストを太字に設定 */
+    color: white; /* テキストの色を白に設定 */
+}

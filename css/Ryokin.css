@@ -1,0 +1,77 @@
+/* ページ全体のスタイル */
+body {
+    background-color: black; /* 背景を黒に設定して、映画館のような雰囲気に */
+    color: white; /* テキストカラーを白に設定 */
+    font-family: Arial, sans-serif; /* フォントをArialに設定 */
+    text-align: center; /* すべてのテキストを中央に配置 */
+    margin: 0; /* ページのデフォルトの余白を削除 */
+    padding: 0; /* ページのデフォルトの内側の余白を削除 */
+}
+
+/* ヘッダー部分のスタイル */
+h1 {
+    margin-top: 20px; /* 上部に20pxの余白を設定 */
+    color: yellow; /* ヘッダーの文字色を黄色に設定 */
+}
+
+/* 情報のスタイル */
+.info {
+    margin: 15px 0; /* 上下に15pxの余白 */
+    font-size: 18px; /* フォントサイズを18pxに設定 */
+}
+
+/* ボタンを含むコンテナのスタイル */
+.button-container {
+    margin-top: 20px; /* 上部に20pxの余白 */
+}
+
+/* ボタンのスタイル */
+button {
+    margin: 10px; /* ボタンの周りに10pxの余白 */
+    padding: 10px 20px; /* ボタンの内側に10pxの上下余白と20pxの左右余白 */
+    font-size: 16px; /* ボタンの文字サイズを16pxに設定 */
+    background-color: yellow; /* ボタンの背景色を黄色に設定 */
+    border: none; /* ボタンにボーダーを付けない */
+    border-radius: 5px; /* ボタンの角を丸くする */
+    cursor: pointer; /* ボタンにカーソルを合わせるとポインターが表示される */
+}
+
+/* ボタンにホバーした時のスタイル */
+button:hover {
+    background-color: #ffcc00; /* ホバー時にボタンの背景色を少し暗くする */
+}
+
+/* モーダル内のコンテンツのスタイル */
+.modal-content {
+    background-color: #333; /* 背景色を暗いグレーに設定 */
+    color: white; /* テキストカラーを白に設定 */
+}
+
+/* チケットオプションのスタイル */
+.ticket-option {
+    cursor: pointer; /* カーソルをポインターに変更 */
+    padding: 10px 20px; /* 内側の余白を10pxと20pxに設定 */
+    text-align: center; /* テキストを中央揃えに */
+    border: 1px solid #ddd; /* オプションに薄いグレーのボーダーを設定 */
+    transition: background-color 0.3s ease; /* 背景色の変更に遷移効果を追加 */
+    display: inline-block; /* オプションをインラインブロックに設定 */
+    margin: 5px; /* オプション間に5pxの余白を設定 */
+    border-radius: 5px; /* 角を丸くする */
+}
+
+/* チケットオプションにホバーした時のスタイル */
+.ticket-option:hover {
+    background-color: #f0f0f0; /* ホバー時に背景色を薄い灰色に変更 */
+}
+
+/* チケットオプションが選択された時のスタイル */
+.ticket-option.selected {
+    background-color: #4CAF50; /* 選択時の背景色を緑に変更 */
+    color: white; /* 文字色を白に変更 */
+}
+
+/* フッター部分のスタイル */
+footer {
+    margin-top: 20px; /* 上部に20pxの余白 */
+    color: #ddd; /* フッターの文字色を薄いグレーに設定 */
+}

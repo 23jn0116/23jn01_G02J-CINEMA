@@ -1,0 +1,61 @@
+/* 全体の背景色と文字色、フォント設定 */
+body {
+    background-color: #000; /* 背景色を黒に設定 */
+    color: #fff; /* 文字色を白に設定 */
+    font-family: Arial, sans-serif; /* フォントをArialに設定 */
+}
+
+/* コンテナのスタイル */
+.container {
+    max-width: 800px; /* コンテナの最大幅を800pxに設定 */
+    margin: 50px auto; /* 上下に50pxの余白を設定、中央寄せ */
+    background-color: #222; /* 背景色を暗いグレーに設定 */
+    padding: 30px; /* 内側の余白を30pxに設定 */
+    border-radius: 10px; /* 角を丸くする */
+}
+
+/* 見出し（h1）のスタイル */
+h1 {
+    color: #f9c40f; /* 見出しの文字色を黄色に設定 */
+    text-align: center; /* 見出しを中央揃え */
+    margin-bottom: 30px; /* 下の余白を30pxに設定 */
+}
+
+/* 予約詳細のスタイル */
+.reservation-details {
+    font-size: 1.1rem; /* 文字のサイズを少し大きめに設定 */
+}
+
+/* ホームボタンのスタイル */
+.home-button {
+    background-color: #f9c40f; /* ボタンの背景色を黄色に設定 */
+    color: #000; /* ボタンの文字色を黒に設定 */
+    border: none; /* 枠線をなくす */
+    padding: 10px 20px; /* ボタンの内側の余白を設定 */
+    font-size: 1rem; /* 文字サイズを1remに設定 */
+    border-radius: 5px; /* 角を丸くする */
+    cursor: pointer; /* カーソルをポインターに変更 */
+}
+
+/* ホームボタンのホバー時のスタイル */
+.home-button:hover {
+    background-color: #e0b90f; /* ホバー時に背景色を少し暗くする */
+}
+
+/* QRコードの表示領域 */
+.qr-code {
+    text-align: center; /* QRコードを中央揃え */
+    margin: 20px 0; /* 上下に20pxの余白を設定 */
+}
+
+/* メモのスタイル */
+.note {
+    background-color: #333; /* 背景色を暗いグレーに設定 */
+    padding: 15px; /* 内側の余白を15pxに設定 */
+    border-radius: 8px; /* 角を丸くする */
+}
+
+/* メモ内のテキストのスタイル */
+.note p {
+    color: #f9c40f; /* メモ内のテキストの文字色を黄色に設定 */
+}
