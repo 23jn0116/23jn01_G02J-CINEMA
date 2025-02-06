@@ -3,11 +3,11 @@ session_start();
 $_SESSION['purchase_complete'] = false;
 
 // 必要なDAOファイルをインクルード
-require_once '../helpers/MovieDAO.php';
-require_once '../helpers/AreaDAO.php';
-require_once '../helpers/ScreenDAO.php';
-require_once '../helpers/SeatDAO.php';
-require_once '../helpers/ScheduleDAO.php';
+require_once './helpers/MovieDAO.php';
+require_once './helpers/AreaDAO.php';
+require_once './helpers/ScreenDAO.php';
+require_once './helpers/SeatDAO.php';
+require_once './helpers/ScheduleDAO.php';
 
 // 映画コードがURLパラメータに存在する場合
 if (isset($_GET['mcode'])) {
@@ -126,7 +126,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET') {
 <head>
     <meta charset="utf-8">
     <title>日程・日時検索</title>
-    <link href="../css/style.css" rel="stylesheet">
+    <link href="./css/style.css" rel="stylesheet">
 </head>
 <body>
     <?php
