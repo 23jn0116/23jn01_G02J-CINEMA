@@ -1,6 +1,6 @@
 <?php
     // 必要なクラスをインクルード
-    require_once './helpers/MovieDAO.php';
+    require_once 'helpers/MovieDAO.php';
     session_start();
     $_SESSION['purchase_complete'] = false; // 購入完了状態を初期化
     
@@ -60,7 +60,7 @@
 <head>
     <meta charset="utf-8">
     <title>映画検索</title>
-    <link href="./css/style.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
     <style>
         /* コンテナのスタイル */
         .container {
