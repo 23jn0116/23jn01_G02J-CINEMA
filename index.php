@@ -1,6 +1,6 @@
 <?php
     // MovieDAOクラスをインクルードして、映画のデータベースアクセスを行う
-    require '../helpers/MovieDAO.php';
+    require './helpers/MovieDAO.php';
     $movieDAO = new MovieDAO();
     
     // おすすめ映画のリストを取得
