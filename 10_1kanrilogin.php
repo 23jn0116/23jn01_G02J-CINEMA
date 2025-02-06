@@ -1,5 +1,5 @@
 <?php 
-    require '../helpers/KaiinDAO.php';  // KaiinDAO.phpをインクルードして、データベース操作を実行できるようにする
+    require './helpers/KaiinDAO.php';  // KaiinDAO.phpをインクルードして、データベース操作を実行できるようにする
 
     $email = '';  // メールアドレスの初期値
     $errs  = [];  // エラーメッセージを格納する配列
@@ -64,7 +64,7 @@
 <html lang="ja">
 <head>
     <meta charset = "utf-8">  <!-- 文字エンコードをUTF-8に指定 -->
-    <link href="../css/LoginStyle.css" rel="stylesheet">  <!-- ログインページ用のスタイルシート -->
+    <link href="./css/LoginStyle.css" rel="stylesheet">  <!-- ログインページ用のスタイルシート -->
     <title>管理者ログイン</title>  <!-- ページタイトル -->
 </head>
 <body>
