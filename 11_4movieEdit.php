@@ -1,6 +1,6 @@
 <?php
 // MovieDAOを読み込んで映画データの操作を行う準備
-require '../helpers/MovieDAO.php';
+require './helpers/MovieDAO.php';
 
 $movieDAO = new MovieDAO();
 
@@ -107,7 +107,7 @@ if (!$movie) {
                 <input type="text" name="photoname" class="form-control" placeholder="写真の名前のみ入力" value="<?= $movie->photo ?>" required>
                 <input type="file" class="form-control-file" id="photo" name="photo">
                 <!-- 現在の画像を表示 -->
-                <img src="../images/moviephoto/<?= $movie->photo ?>" alt="現在の写真" style="width: 100px;">
+                <img src="./images/moviephoto/<?= $movie->photo ?>" alt="現在の写真" style="width: 100px;">
             </div>
             <!-- 更新ボタン -->
             <button type="submit" class="btn btn-success">更新</button>
