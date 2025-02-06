@@ -1,7 +1,7 @@
 <?php
 
-    require_once './helpers/KaiinDAO.php'; // 会員情報を扱うDAO
-    require './helpers/MovieDAO.php'; // 映画情報を扱うDAO
+    require_once 'helpers/KaiinDAO.php'; // 会員情報を扱うDAO
+    require 'helpers/MovieDAO.php'; // 映画情報を扱うDAO
     
     // MovieDAOのインスタンスを作成し、映画推薦リストを取得
     $movieDAO = new MovieDAO();
@@ -27,7 +27,7 @@
 <head>
     <meta charset="UTF-8">
     <title>J-CINNEMA</title>
-    <link href="./css/style.css" rel="stylesheet"> <!-- 外部CSSをリンク -->
+    <link href="css/style.css" rel="stylesheet"> <!-- 外部CSSをリンク -->
 </head>
 
 <body>
