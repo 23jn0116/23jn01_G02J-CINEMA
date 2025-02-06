@@ -1,7 +1,7 @@
 <?php
 // 必要なDAOクラスを読み込む
-require './helpers/JECcardDAO.php';  // JECカード情報のDAO
-require_once './helpers/KaiinDAO.php'; // 会員情報のDAO
+require 'helpers/JECcardDAO.php';  // JECカード情報のDAO
+require_once 'helpers/KaiinDAO.php'; // 会員情報のDAO
 
 // セッションが開始されていない場合はセッションを開始
 if (session_status() === PHP_SESSION_NONE) {
@@ -57,7 +57,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['charge_button'])) {
 <head>
     <meta charset="utf-8">
     <title>JECcardcheck</title>
-    <link href="./css/JECcard.css" rel="stylesheet">
+    <link href="css/JECcard.css" rel="stylesheet">
 </head>
 <body>
     <?php include "header2.php"; ?> <!-- ヘッダーを読み込む -->
