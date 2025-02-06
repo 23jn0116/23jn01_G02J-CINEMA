@@ -12,7 +12,7 @@ $error = isset($_GET['error']) ? $_GET['error'] : '';
 <html lang="ja">
 
 <!-- 外部CSS -->
-    <link rel="stylesheet" href="./css/ErrorKessai.css">
+    <link rel="stylesheet" href="css/ErrorKessai.css">
 
 <head>
     <meta charset="utf-8">
