@@ -1,5 +1,5 @@
 <?php
-    require_once '../helpers/KaiinDAO.php';
+    require_once './helpers/KaiinDAO.php';
 
     if(session_status() === PHP_SESSION_NONE){
         session_start();
