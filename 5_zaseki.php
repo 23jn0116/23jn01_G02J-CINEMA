@@ -1,9 +1,9 @@
 <?php
 // 必要なDAOファイルをインクルード
-require '../helpers/MovieDAO.php';
-require '../helpers/SeatDAO.php';
-require '../helpers/ScheduleDAO.php';
-require '../helpers/Seat_yoyakuDAO.php';
+require './helpers/MovieDAO.php';
+require './helpers/SeatDAO.php';
+require './helpers/ScheduleDAO.php';
+require './helpers/Seat_yoyakuDAO.php';
 
 // セッションが開始されていない場合に開始する
 if (session_status() === PHP_SESSION_NONE) {
@@ -163,7 +163,7 @@ if ($movie_code && $selected_screen && $playdate) {
     } ?>
     <meta charset="utf-8">
     <title>映画館の座席予約</title>
-    <link href="../css/seatstyle.css" rel="stylesheet">
+    <link href="./css/seatstyle.css" rel="stylesheet">
 </head>
 <body>
     <div class="container">
