@@ -1,7 +1,7 @@
 <?php
 // 必要なDAOクラスを読み込む
-require '../helpers/JECcardDAO.php';  // JECカード情報のDAO
-require_once '../helpers/KaiinDAO.php'; // 会員情報のDAO
+require './helpers/JECcardDAO.php';  // JECカード情報のDAO
+require_once './helpers/KaiinDAO.php'; // 会員情報のDAO
 
 // セッションを開始
 session_start();
@@ -38,7 +38,7 @@ $zandaka = $jeccard->zandaka; // JECカードの残高
 <html lang="ja">
 <head>
     <meta charset="utf-8">
-    <link href="../css/JECcard.css" rel="stylesheet">
+    <link href="./css/JECcard.css" rel="stylesheet">
     <title>チャージ完了</title>
 </head>
 <body>
