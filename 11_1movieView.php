@@ -1,5 +1,5 @@
 <?php
-require './helpers/MovieDAO.php'; 
+require 'helpers/MovieDAO.php'; 
 
 $movieDAO = new MovieDAO();  // MovieDAOのインスタンスを生成
 $movie_list = $movieDAO->get_movie();  // 映画リストを取得
