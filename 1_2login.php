@@ -1,6 +1,6 @@
 <?php 
 
-    require './helpers/KaiinDAO.php'; // 会員情報を管理するDAOファイルをインクルード
+    require 'helpers/KaiinDAO.php'; // 会員情報を管理するDAOファイルをインクルード
 
     $email = ''; // 入力されたメールアドレスを格納する変数を初期化
     $errs  = []; // エラーメッセージを格納する配列を初期化
@@ -59,7 +59,7 @@
 <html lang="ja">
 <head>
     <meta charset = "utf-8">
-    <link href="./css/LoginStyle.css" rel="stylesheet"> <!-- ログインページ専用のCSSをリンク -->
+    <link href="css/LoginStyle.css" rel="stylesheet"> <!-- ログインページ専用のCSSをリンク -->
     <title>ログイン</title> <!-- ページタイトル -->
 </head>
 <body>
