@@ -1,6 +1,6 @@
 <?php
 session_start();
-require '../helpers/KaiinDAO.php';
+require './helpers/KaiinDAO.php';
 
 // ユーザー情報を取得
 $kaiinDAO = new KaiinDAO();
@@ -28,7 +28,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>退会申請</title>
-    <link rel="stylesheet" href="../css/exit.css">
+    <link rel="stylesheet" href="./css/exit.css">
     <style>
         /* モーダルウィンドウのデザイン */
         .modal {
