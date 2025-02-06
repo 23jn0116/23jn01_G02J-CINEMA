@@ -1,5 +1,5 @@
 <?php
-require_once './helpers/MovieDAO.php'; 
+require_once 'helpers/MovieDAO.php'; 
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     if (isset($_POST['tuika'])) {
