@@ -1,6 +1,6 @@
 <?php
-require '../helpers/MovieDAO.php';
-require '../helpers/ScheduleDAO.php';
+require './helpers/MovieDAO.php';
+require './helpers/ScheduleDAO.php';
 
 $movieDAO = new MovieDAO();
 $movie_list = $movieDAO->get_movie();
