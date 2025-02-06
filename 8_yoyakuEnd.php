@@ -1,9 +1,9 @@
 <?php
     // 必要なファイルをインクルード
-    require '../helpers/MovieDAO.php';
-    require_once '../helpers/KaiinDAO.php';
-    require_once '../helpers/yoyakulistDAO.php';
-    require_once '../helpers/SeatDAO.php';
+    require './helpers/MovieDAO.php';
+    require_once './helpers/KaiinDAO.php';
+    require_once './helpers/yoyakulistDAO.php';
+    require_once './helpers/SeatDAO.php';
 
     // セッションが開始されていない場合、開始
     if (session_status() === PHP_SESSION_NONE) {
@@ -74,7 +74,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>予約完了</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="../css/yoyakuEnd.css"> <!-- 外部CSSをリンク -->
+    <link rel="stylesheet" href="./css/yoyakuEnd.css"> <!-- 外部CSSをリンク -->
 </head>
 <body>
     <!-- ヘッダーをインクルード -->
