@@ -1,6 +1,6 @@
 <?php
 // MovieDAOを読み込んで映画データの操作を行う準備
-require './helpers/MovieDAO.php';
+require 'helpers/MovieDAO.php';
 
 $movieDAO = new MovieDAO();
 
