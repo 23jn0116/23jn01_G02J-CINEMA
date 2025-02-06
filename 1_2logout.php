@@ -23,7 +23,7 @@
 </head>
 <body>
     <?php include 'header.php'; ?> <!-- 共通ヘッダーを読み込み -->
-    <link href="./css/style.css" rel="stylesheet"> <!-- 外部CSSをリンク -->
+    <link href="css/style.css" rel="stylesheet"> <!-- 外部CSSをリンク -->
     <h1>ログアウトが完了しました。</h1> <!-- ログアウト完了メッセージ -->
     <p><a href = "index.php">トップページへ</a></p> <!-- トップページへのリンク -->
 </body>
