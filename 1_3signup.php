@@ -1,6 +1,6 @@
 <?php
-require_once '../helpers/KaiinDAO.php'; // 会員情報を管理するクラスを読み込み
-require_once '../helpers/JECcardDAO.php'; // JECカード情報を管理するクラスを読み込み
+require_once './helpers/KaiinDAO.php'; // 会員情報を管理するクラスを読み込み
+require_once './helpers/JECcardDAO.php'; // JECカード情報を管理するクラスを読み込み
 
 $errs  = []; // エラーメッセージを格納する配列を初期化
 
@@ -96,7 +96,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 <html lang="ja">
 <head>
     <meta charset="utf-8"> <!-- 文字コードをUTF-8に設定 -->
-    <link href="../css/LoginStyle.css" rel="stylesheet"> <!-- 外部CSSをリンク -->
+    <link href="./css/LoginStyle.css" rel="stylesheet"> <!-- 外部CSSをリンク -->
     <title>新規登録</title> <!-- ページタイトル -->
 </head>
 <body>
