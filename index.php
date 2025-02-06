@@ -35,7 +35,7 @@
                 <a href="2_area.php?mcode=<?= $recommend->mcode ?>">
                     <div class="carousel-item">
                         <!-- 映画の画像を表示 -->
-                        <img src="../images/moviephoto/<?= $recommend->photo ?>" alt="<?= $recommend->mname ?>" />
+                        <img src="images/moviephoto/<?= $recommend->photo ?>" alt="<?= $recommend->mname ?>" />
                     </div>
                 </a>
             <?php endforeach ?>
