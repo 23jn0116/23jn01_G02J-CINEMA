@@ -5,7 +5,7 @@
 <html lang="ja">
 <head>
     <meta charset = "utf-8"> <!-- 文字コードをUTF-8に設定 -->
-    <link href="../css/style.css" rel="stylesheet"> <!-- 外部CSSをリンク -->
+    <link href="./css/style.css" rel="stylesheet"> <!-- 外部CSSをリンク -->
     <title>ログイン完了</title> <!-- ページタイトル -->
 </head>
 <body>
