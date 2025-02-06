@@ -1,7 +1,7 @@
 <?php
 // 必要なDAOクラスを読み込む
-require_once '../helpers/KaiinDAO.php';  // 会員情報のDAO
-require '../helpers/JECcardDAO.php';     // JECカード情報のDAO
+require_once './helpers/KaiinDAO.php';  // 会員情報のDAO
+require './helpers/JECcardDAO.php';     // JECカード情報のDAO
 
 // セッションが開始されていない場合、セッションを開始
 if (session_status() === PHP_SESSION_NONE) {
@@ -41,7 +41,7 @@ $maxCharge = max(0, 500000 - $zandaka);
 <head>
     <meta charset="utf-8">
     <title>J-CINEMA</title>
-    <link href="../css/JECcard.css" rel="stylesheet">
+    <link href="./css/JECcard.css" rel="stylesheet">
     <script>
         // チャージ金額を設定するJavaScript関数
         function setCharge(amount) {
