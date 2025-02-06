@@ -1,6 +1,6 @@
 <header>
     <!-- 外部CSSファイルのリンク -->
-    <link href="../css/HeaderStyle.css" rel="stylesheet">
+    <link href="./css/HeaderStyle.css" rel="stylesheet">
 
     <!-- ヘッダーのコンテンツを包含するdiv -->
     <div class="header-content">
