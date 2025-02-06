@@ -3,7 +3,7 @@
 session_start();
 
 // 必要なDAOクラスを読み込む
-require './helpers/KaiinDAO.php';
+require 'helpers/KaiinDAO.php';
 
 // ユーザー情報を取得するためのDAOクラスのインスタンスを作成
 $kaiinDAO = new KaiinDAO();
@@ -21,7 +21,7 @@ $kno   = $_SESSION['id'];    // 会員ID
     <!-- BootstrapのCSSを読み込む -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <!-- 独自のCSSファイルを読み込む -->
-    <link href="./css/pass.css" rel="stylesheet">
+    <link href="css/pass.css" rel="stylesheet">
     <title>パスワード変更</title>
 </head>
 <body>
