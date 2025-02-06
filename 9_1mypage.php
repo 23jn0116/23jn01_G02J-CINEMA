@@ -1,7 +1,7 @@
 <?php
     // KaiinDAO と MovieDAO を読み込む
-    require_once '../helpers/KaiinDAO.php'; // 会員情報を取り扱うDAO
-    require '../helpers/MovieDAO.php';     // 映画情報を取り扱うDAO
+    require_once './helpers/KaiinDAO.php'; // 会員情報を取り扱うDAO
+    require './helpers/MovieDAO.php';     // 映画情報を取り扱うDAO
     
     // MovieDAO のインスタンスを作成
     $movieDAO = new MovieDAO();
@@ -24,7 +24,7 @@
 <head>
     <meta charset = "utf-8">
     <title>JecShopping - mypage</title>
-    <link href = "../css/style.css" rel="stylesheet"> <!-- 外部CSSをリンク -->
+    <link href = "./css/style.css" rel="stylesheet"> <!-- 外部CSSをリンク -->
 </head>
 <body>
     <?php include "header2.php"; ?> <!-- ヘッダーを読み込む -->
@@ -33,7 +33,7 @@
 <html>
 <head>
     <meta charset = "utf-8">
-    <link href = "../css/mypage.css" rel = "stylesheet"> <!-- mypage.css をリンク -->
+    <link href = "./css/mypage.css" rel = "stylesheet"> <!-- mypage.css をリンク -->
     <title>mypage</title>
 </head>
 <body>
