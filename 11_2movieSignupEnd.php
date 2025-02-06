@@ -1,5 +1,5 @@
 <?php
-require_once './helpers/MovieDAO.php'; // 必要なMovieDAOファイルを読み込む
+require_once 'helpers/MovieDAO.php'; // 必要なMovieDAOファイルを読み込む
 
 // POSTリクエストが送信された場合
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
