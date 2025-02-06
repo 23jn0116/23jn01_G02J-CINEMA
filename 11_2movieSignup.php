@@ -1,5 +1,5 @@
 <?php
-require_once '../helpers/MovieDAO.php'; 
+require_once './helpers/MovieDAO.php'; 
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     if (isset($_POST['tuika'])) {
@@ -14,7 +14,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $photoname  = pathinfo($_POST['photoname'], PATHINFO_FILENAME); // 拡張子を除いたファイル名を取得
 
         // 画像ファイルの保存処理
-        $target_dir = "../images/moviephoto/"; // 保存するディレクトリ
+        $target_dir = "./images/moviephoto/"; // 保存するディレクトリ
         $imageFileType = strtolower(pathinfo($_FILES["photo"]["name"], PATHINFO_EXTENSION)); // 画像の拡張子を取得
         $target_file = $target_dir . $photoname . '.' . $imageFileType; // 入力された名前でファイル名を設定
         $uploadOk = 1;
