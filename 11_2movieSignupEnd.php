@@ -1,5 +1,5 @@
 <?php
-require_once '../helpers/MovieDAO.php'; // 必要なMovieDAOファイルを読み込む
+require_once './helpers/MovieDAO.php'; // 必要なMovieDAOファイルを読み込む
 
 // POSTリクエストが送信された場合
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
@@ -16,7 +16,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $photoname  = $_POST['photoname'];    // ユーザーが入力した写真名
 
         // 画像ファイルの保存処理
-        $target_dir = "../images/moviephoto/"; // 保存先ディレクトリ
+        $target_dir = "./images/moviephoto/"; // 保存先ディレクトリ
         $imageFileType = strtolower(pathinfo($_FILES["photo"]["name"], PATHINFO_EXTENSION)); // ファイル拡張子を取得
         $target_file = $target_dir . $photoname . '.' . $imageFileType; // 保存するファイルのパス
         $uploadOk = 1;
