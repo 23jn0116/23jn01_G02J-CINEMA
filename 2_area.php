@@ -1,5 +1,5 @@
 <?php
-    require './helpers/AreaDAO.php'; // AreaDAOをインクルードして、エリア情報の取得を行う
+    require 'helpers/AreaDAO.php'; // AreaDAOをインクルードして、エリア情報の取得を行う
     if (isset($_GET['mcode'])) {
         $mcode = $_GET['mcode'];  // mcodeがURLのパラメータとして渡されている場合、変数に格納
     } else {
@@ -37,7 +37,7 @@
 <head>
     <meta charset="utf-8">
     <title>地域検索</title>
-    <link href="./css/style.css" rel="stylesheet">  <!-- CSSファイルの読み込み -->
+    <link href="css/style.css" rel="stylesheet">  <!-- CSSファイルの読み込み -->
 </head>
 <body>
     <?php if (isset($_SESSION['kaiin'])) { 
