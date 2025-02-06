@@ -1,12 +1,12 @@
 <?php
-require './helpers/JECcardDAO.php';
-require_once './helpers/AreaDAO.php';
-require_once './helpers/KaiinDAO.php';
-require_once './helpers/Seat_yoyakuDAO.php';
-require_once './helpers/SeatDAO.php';
-require_once './helpers/PaymentDAO.php'; // PaymentDAOをインクルード
-require_once './helpers/yoyakulistDAO.php';
-require_once './helpers/MovieDAO.php';
+require 'helpers/JECcardDAO.php';
+require_once 'helpers/AreaDAO.php';
+require_once 'helpers/KaiinDAO.php';
+require_once 'helpers/Seat_yoyakuDAO.php';
+require_once 'helpers/SeatDAO.php';
+require_once 'helpers/PaymentDAO.php'; // PaymentDAOをインクルード
+require_once 'helpers/yoyakulistDAO.php';
+require_once 'helpers/MovieDAO.php';
 
 session_start(); // セッション開始
 
@@ -83,7 +83,7 @@ if ($_SESSION['purchase_complete'] !== true) {
     <meta charset="utf-8">
     <title>決済確認</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="./css/Kessai.css"> <!-- 外部CSSをリンク -->
+    <link rel="stylesheet" href="css/Kessai.css"> <!-- 外部CSSをリンク -->
 
     <script>
         // 残高不足の確認と、チャージ画面への遷移
