@@ -21,7 +21,7 @@ session_destroy();
 <html lang="ja">
 <head>
     <meta charset="utf-8">
-    <link href="../css/style.css" rel="stylesheet">
+    <link href="./css/style.css" rel="stylesheet">
     <title>パスワード変更完了</title>
 </head>
 <body>
