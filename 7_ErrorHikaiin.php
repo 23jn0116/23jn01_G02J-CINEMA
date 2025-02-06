@@ -12,7 +12,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
     
     <!-- 外部CSS (ErrorHiKaiin.cssファイルを読み込む) -->
-    <link rel="stylesheet" href="../css/ErrorHiKaiin.css">
+    <link rel="stylesheet" href="./css/ErrorHiKaiin.css">
 </head>
 <body>
     <!-- エラーメッセージを表示するためのコンテナ -->
