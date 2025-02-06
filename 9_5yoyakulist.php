@@ -1,8 +1,8 @@
 <?php
-require_once '../helpers/MovieDAO.php';
-require_once '../helpers/KaiinDAO.php';
-require_once '../helpers/yoyakulistDAO.php';
-require_once '../helpers/SeatDAO.php';
+require_once './helpers/MovieDAO.php';
+require_once './helpers/KaiinDAO.php';
+require_once './helpers/yoyakulistDAO.php';
+require_once './helpers/SeatDAO.php';
 
 if (session_status() === PHP_SESSION_NONE) {
     session_start();
@@ -75,7 +75,7 @@ $qrApiUrl = 'https://api.qrserver.com/v1/create-qr-code/?data=' . urlencode($res
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>予約完了</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="../css/yoyakuEnd.css"> <!-- 外部CSSをリンク -->
+    <link rel="stylesheet" href="./css/yoyakuEnd.css"> <!-- 外部CSSをリンク -->
 </head>
 <body>
 <?php include "header2.php"; ?>
