@@ -1,5 +1,5 @@
 <?php
-require '../helpers/KaiinDAO.php'; // DB接続ファイルを読み込み
+require './helpers/KaiinDAO.php'; // DB接続ファイルを読み込み
 
 // 登録者情報を取得する処理
 $kaiinDAO = new KaiinDAO();
